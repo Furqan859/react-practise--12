@@ -1,11 +1,12 @@
 import React from "react";
+import Products from "./component/Products";
 const App = ()=>{
-    const buy = () => {
-      alert("this is button")
-    }
+
+
     return(<div>
-        <h1>This is product Page</h1>
-        <button onClick={buy}>buy</button>
+  <Products />
+  <Products />
+  <Products />
     </div>)
 }
 export default App;
