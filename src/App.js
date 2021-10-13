@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import Products from "./component/Products";
 import Total from "./component/Total";
+import ProductForm from "./component/ProductForm";
 
 
 
@@ -24,8 +25,14 @@ const App = ()=>{
      alert("you selected " + name)
  }
 
+ const addProducts = (product) => {
+   setProducts([...products , product])
+
+ }
+
     return(
                   <div>
+                      <ProductForm index={products.length + 1} onCreate={addProducts}/>
                       {products.map((p) =>  (
 
                       < Products

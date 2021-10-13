@@ -1,5 +1,4 @@
 import React , {useState} from "react";
-import Total from "./Total";
 const Products = ({price, name , onShow , calc}) => {
     const [quantity , setQuantity] = useState(0);
 
