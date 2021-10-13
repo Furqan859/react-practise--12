@@ -1,7 +1,8 @@
-import React,{useState} from "react";
+import React from "react";
 
-const Total = () =>{
-
-    return (<h3>Total Cash: </h3>)
+const Total = ({totalCash}) => {
+  return(<div>
+      Total Cash : {totalCash}
+  </div>)
 }
 export default Total;
